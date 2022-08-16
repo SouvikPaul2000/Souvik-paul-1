@@ -1,0 +1,15 @@
+version: '3'
+services:
+  souviksql:
+    image: 'mysql:8.0.29'
+    ports:
+      - 3305:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=Souvik
+      - MYSQL_ROOT_USERNAME=root
+    
+    
+# networks:
+#   default:
+#      driver: bridge
+   

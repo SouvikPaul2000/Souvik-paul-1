@@ -1,0 +1,18 @@
+version: '3'
+services:
+  my_api:
+    build: .
+    ports:
+      - 8009:5000
+    environment:
+      - MYSQL_ROOT_PASSWORD=Souvik
+      - MYSQL_ROOT_USERNAME=root
+      - DBNAME=database4
+      - HOST_NAME=172.26.64.1
+      - PORT=3305
+    
+    # networks:
+    #   default:
+    #     driver: bridge
+   
+    

@@ -1,0 +1,15 @@
+FROM python:3.8
+
+COPY . .
+RUN  pip install -r requirement.txt
+# ARG MYSQL_ROOT_PASSWORD
+# ARG HOST_NAME
+# ARG PORT
+# ARG DBNAME
+# ENV MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD 
+# ENV HOST_NAME=$HOST_NAME
+# ENV PORT=$PORT
+# ENV DBNAME=$DBNAME
+
+
+CMD ["python", "main1.py"] 
